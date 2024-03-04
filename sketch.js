@@ -6,7 +6,7 @@ let engine;
 let world;
 let boxes = [];
 let numBoxes = 40;
-let boxSize = 50;
+let boxSize = 200;
 let permissionGranted = false;
 
 function setup() {
@@ -59,12 +59,13 @@ function requestAccess() {
     .then((response) => {
       if (response == "granted") {
         permissionGranted = true;
+        button.remove();
       } else {
         permissionGranted = false;
       }
     })
     .catch(console.error);
-  button.remove();
+   button.remove();
 }
 
 function draw() {
