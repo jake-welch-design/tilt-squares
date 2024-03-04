@@ -5,3 +5,17 @@ html, body {
 canvas {
   display: block;
 }
+
+button {
+  border: none;
+  border-radius: 0px;
+  border-color: none;
+  padding: 4px;
+  color: black;
+  background: white;
+}
+
+button:hover {
+  background: black;
+  color: white;
+}
