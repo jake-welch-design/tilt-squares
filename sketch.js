@@ -34,7 +34,7 @@ function setup() {
   }
 
   engine = Matter.Engine.create();
-  engine.timing.timeScale = 0.2;
+  engine.timing.timeScale = 0.4;
 
   engine.positionIterations = 10;
   engine.velocityIterations = 10;
