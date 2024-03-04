@@ -6,11 +6,13 @@ let engine;
 let world;
 let boxes = [];
 let numBoxes = 40;
-let boxSize = 200;
+let boxSize;
 let permissionGranted = false;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
+  
+  boxSize = windowWidth/10;
 
   if (
     typeof DeviceOrientationEvent !== "undefined" &&
